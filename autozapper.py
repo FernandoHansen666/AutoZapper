@@ -3,16 +3,16 @@ import datetime
 import time
 
 
-
-number = "+554396286759"
+number = ["+5543998156249","+5543988566555"] 
 mensagem = 'Isto é um teste, se recebeu significa que meu Algoritimo em python esta feito com sucesso!'
 
-i = 1
+i = 0
 
-while i < 6:
+while i < len(number):
     now = datetime.datetime.now()
-    pwk.sendwhatmsg_instantly(
-        number, mensagem, 10, True, 3
-    )
+
+    pwk.sendwhatmsg_instantly(number[i], mensagem, 10, True, 3)
+
     i + 1
     time.sleep(3)
+
