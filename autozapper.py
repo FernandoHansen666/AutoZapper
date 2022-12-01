@@ -3,7 +3,7 @@ import datetime
 import time
 
 
-number = ["+5543998156249","+5543988566555"] 
+number = ["+numero","+numero"] 
 mensagem = 'Isto é um teste, se recebeu significa que meu Algoritimo em python esta feito com sucesso!'
 
 i = 0
