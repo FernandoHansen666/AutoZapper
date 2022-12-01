@@ -31,23 +31,23 @@ jobs:
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Lint with flake8
       run: |
-import pywhatkit as pwk
-import datetime
-import time
+        import pywhatkit as pwk
+        import datetime
+        import time
 
 
-number = ["+5543998156249","+5543988566555"] 
-mensagem = 'Isto é um teste, se recebeu significa que meu Algoritimo em python esta feito com sucesso!'
+        number = ["+5543998156249","+5543988566555"] 
+        mensagem = 'Isto é um teste, se recebeu significa que meu Algoritimo em python esta feito com sucesso!'
 
-i = 0
+        i = 0
 
-while i < len(number):
-    now = datetime.datetime.now()
+        while i < len(number):
+            now = datetime.datetime.now()
 
-    pwk.sendwhatmsg_instantly(number[i], mensagem, 10, True, 3)
+            pwk.sendwhatmsg_instantly(number[i], mensagem, 10, True, 3)
 
-    i + 1
-    time.sleep(3)
+            i + 1
+            time.sleep(3)
 
 
     - name: Test with pytest
